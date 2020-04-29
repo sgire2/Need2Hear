@@ -6,27 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button startButton = findViewById(R.id.startBtn);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_second);
+
+        Button fortune = findViewById(R.id.fortuneBtn);
+        fortune.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                goToSecondActivity();
+                goToFortuneActivity();
             }
         });
-
     }
 
-
-
-    private void goToSecondActivity() {
-        Intent intent = new Intent(this, SecondActivity.class);
+    private void goToFortuneActivity() {
+        Intent intent = new Intent(this, FortuneActivity.class);
         startActivity(intent);
     }
 }

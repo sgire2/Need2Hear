@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Need2Hear</string>
+    <string name="info_page">welcome to Need2Hear</string>
+    <string name="fortune">receive a fortune</string>
 </resources>
