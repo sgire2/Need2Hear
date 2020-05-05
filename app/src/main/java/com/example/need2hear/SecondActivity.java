@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        Button home = findViewById(R.id.homeBtn2);
+        Button home = findViewById(R.id.homeBtn);
         home.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 goToMainActivity();
