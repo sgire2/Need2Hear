@@ -2,4 +2,6 @@
     <string name="app_name">Need2Hear</string>
     <string name="info_page">welcome to Need2Hear</string>
     <string name="fortune">receive a fortune</string>
+    <string name="fortuneInfo">Open your fortune cookie to reveal your fortune.</string>
+    <string name="horoscope">receive a horoscope</string>
 </resources>

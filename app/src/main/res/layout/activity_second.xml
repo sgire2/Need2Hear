@@ -8,6 +8,22 @@
     android:background="@drawable/gradient2"
     tools:context=".SecondActivity">
 
+    <Button
+        android:id="@+id/fortuneBtn2"
+        android:layout_width="230dp"
+        android:layout_height="59dp"
+        android:background="#204B3F"
+        android:text="@string/horoscope"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fortuneBtn"
+        app:layout_constraintVertical_bias="0.241" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="305dp"
@@ -20,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintVertical_bias="0.287" />
 
     <Button
         android:id="@+id/fortuneBtn"
@@ -35,6 +51,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CE4CF"
+        android:text="h o m e"
+        android:textColor="#204B3F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
