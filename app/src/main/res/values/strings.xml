@@ -2,6 +2,9 @@
     <string name="app_name">Need2Hear</string>
     <string name="info_page">welcome to Need2Hear</string>
     <string name="fortune">receive a fortune</string>
+    <string name="horoscope">receive a horoscope</string>
+    <string name="fortuneInfo">OPEN YOUR FORTUNE COOKIE</string>
+    <string name="yourFortune">your fortune will appear here</string>
     <string name="select_a_horoscope">SELECT A HOROSCOPE</string>
     <string name="aquarius">Aquarius</string>
     <string name="pisces">pisces</string>

@@ -9,7 +9,7 @@
     tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/fortuneBtn2"
+        android:id="@+id/horoscopeBtn"
         android:layout_width="230dp"
         android:layout_height="59dp"
         android:background="#204B3F"

@@ -27,6 +27,13 @@ public class SecondActivity extends AppCompatActivity {
                 goToMainActivity();
             }
         });
+
+        Button horoscopeBtn = findViewById(R.id.horoscopeBtn);
+        horoscopeBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToHoroscopeActivity();
+            }
+        });
     }
 
     private void goToFortuneActivity() {
@@ -36,6 +43,11 @@ public class SecondActivity extends AppCompatActivity {
 
     private void goToMainActivity() {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void goToHoroscopeActivity() {
+        Intent intent = new Intent(this, HoroscopeActivity.class);
         startActivity(intent);
     }
 }
