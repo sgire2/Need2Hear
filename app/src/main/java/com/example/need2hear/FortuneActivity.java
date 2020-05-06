@@ -56,29 +56,28 @@ public class FortuneActivity extends AppCompatActivity {
         final String url = "https://yerkee.com/api/fortune/people";
 
         TextView textView = findViewById(R.id.fortuneText);
-        textView.setText("You know what the next step is. Why don't you take it?");
 
-//        RequestQueue queue = Volley.newRequestQueue(this);
-//        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url , null,
-//                new Response.Listener<JSONObject>() {
-//                    @Override
-//                    public void onResponse(JSONObject response) {
-//                        try {
-//                            String fortune = response.get("fortune").toString();
-//                            TextView textView = findViewById(R.id.fortuneText);
-//                            textView.setText(fortune);
-//                        }
-//                        catch (JSONException e) {
-//                            System.out.print("error :(");
-//                        }
-//                    }
-//                },
-//                new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        System.out.println(error.toString());
-//                    }
-//                });
-//        queue.add(request);
+        RequestQueue queue = Volley.newRequestQueue(this);
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url , null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            String fortune = response.get("fortune").toString();
+                            TextView textView = findViewById(R.id.fortuneText);
+                            textView.setText(fortune);
+                        }
+                        catch (JSONException e) {
+                            System.out.print("error :(");
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.println(error.toString());
+                    }
+                });
+        queue.add(request);
     }
 }
