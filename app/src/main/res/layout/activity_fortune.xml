@@ -4,17 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
     tools:context=".FortuneActivity">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="295dp"
-        android:layout_height="38dp"
-        android:text="fortune would appear here"
-        android:textSize="24sp"
+    <ImageButton
+        android:id="@+id/cookieBtn"
+        android:layout_width="167dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="Fortune Cookie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/foortunecoookie" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="279dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:text="@string/fortuneInfo"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintBottom_toTopOf="@+id/cookieBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <Button
+        android:id="@+id/homeBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CE4CF"
+        android:text="h o m e"
+        android:textColor="#204B3F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
 </androidx.constraintlayout.widget.ConstraintLayout>

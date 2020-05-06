@@ -20,10 +20,22 @@ public class SecondActivity extends AppCompatActivity {
                 goToFortuneActivity();
             }
         });
+
+        Button home = findViewById(R.id.homeBtn);
+        home.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToMainActivity();
+            }
+        });
     }
 
     private void goToFortuneActivity() {
         Intent intent = new Intent(this, FortuneActivity.class);
+        startActivity(intent);
+    }
+
+    private void goToMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
